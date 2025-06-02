@@ -6,7 +6,7 @@
   height: 400px;
 }
 
-.flickity-viewport{
+.flickity-viewport {
   overflow: visible;
 }
 
@@ -21,15 +21,17 @@
 .carousel-cell::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   pointer-events: none; /* lets you click through the overlay */
   z-index: 1;
 }
 
 .carousel-cell.is-selected img {
-  filter:blur(0)
+  filter: blur(0);
 }
 
 .carousel-cell img {
@@ -43,7 +45,7 @@
 }
 
 .carousel-cell img:hover {
-  filter:blur(0px);
+  filter: blur(0px);
   transition: filter 0.3s ease-in-out;
 }
 
@@ -52,16 +54,17 @@
   bottom: 0px;
   left: 5%;
   width: 50%;
+  white-space: pre-wrap;
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   z-index: 2;
 }
 
 .carousel-cell .wish-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   width: 32px;
   height: 32px;
   border: 2px outset darkgray;
@@ -71,7 +74,8 @@
   background-size: 32px;
   cursor: pointer;
   z-index: 2;
-  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    background-image 0.3s ease-in-out;
 }
 
 .carousel-cell .wish-icon:hover {
@@ -91,15 +95,100 @@
   z-index: 2;
 }
 
-.carousel-cell .price{
+.carousel-cell .prices {
   position: absolute;
+  background-image: url("/img/background.png");
+  background-size: 64px;
+  display: flex;
+  justify-content: space-between; /* separa os elementos nas extremidades */
+  align-items: flex-start; /* alinha no topo */
+  right: 15px;
+  bottom: 15px;
+  max-width: 50%;
+  padding: 5px;
+  border: 5px inset rgba(24, 20, 37, 1);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.carousel-cell .price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os preços */
+}
+
+.carousel-cell .oldPrice {
   font-family: "PixelOperatorMono";
-  bottom: 0px;
-  right: 5%;
-  width: 50%;
-  color: white;
-  font-size: 24px;
-  text-align: right;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: gray;
+  margin: 0; /* margem inferior para separar do price */
+}
+
+.carousel-cell .price {
+  font-family: "PixelOperatorMono";
+  font-weight: bold;
+  font-size: 28px;
+  color: #ffd700;
+  margin: 0 10px;
+}
+
+.carousel-cell .discount {
+  position: static; /* removido absolute */
+  font-weight: bold;
+  font-size: 40px;
+  border: 2px outset #8a6e2f;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  padding: 0 5px;
+  margin: 0;
+  text-align: center;
+  align-self: flex-start; /* alinha à esquerda */
+}
+
+.carousel-cell .cart {
+  position: static; /* removido absolute */
+  width: 32px;
+  height: 32px;
+  border: 2px outset #ffdd00;
+  background-color: #ffdd00;
+  background-image: url("/img/cart.png");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    background-image 0.3s ease-in-out;
+  align-self: center; /* centraliza verticalmente */
+}
+
+.carousel-cell .cart:hover {
+  border: 2px outset green;
+  background-color: green;
+  background-image: url("/img/cart.png");
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-cell .cart:active {
+  border: 2px inset green;
+  background-color: green;
+  background-position: 1px 1px;
+  cursor: pointer;
   z-index: 2;
 }
 

@@ -1,6 +1,8 @@
 @import url("../css/header.css");
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "PixelOperator";
     text-align: center;
     background-image: url("/img/background.png");
@@ -9,12 +11,13 @@ body {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     color: white;
+    align-items: center;
 }
 
 img {
-    height: 512px;
-    background: radial-gradient(  rgba(14, 13, 17, 1),rgba(14, 13, 17, 1),rgba(14, 13, 17, 1) ,rgba(0,0,0,0));
-    padding: 100px;
+    height: 256px;
+    width: 256px;
+    margin: 20px;
 }
 
 h1 {
@@ -28,9 +31,13 @@ h2 {
 }
 h3 {
     font-size: 32px;
-    margin: 0;
+    margin-top: 0;
 }
 a {
+    margin: 100px;
+    padding: 5px;
+    background-color: rgba(38, 43, 68, 1);
+    border: 2px outset rgba(24, 20, 37, 1);
     color: #fff;
     font-family: "PixelOperator";
     font-size: 32px;
@@ -38,4 +45,16 @@ a {
     font-weight: bold;
     margin: 0 10px;
     transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  border: 2px outset lightblue;
+  background-color: lightblue;
+  color: black;
+}
+
+a:active {
+  border: 2px inset lightblue;
+  background-color: lightblue;
+  color: black;
 }
