@@ -1,0 +1,269 @@
+/* ---------------------- */
+/*        Regular         */
+/* ---------------------- */
+@font-face {
+  font-family: "PixelOperator";
+  src: url("../assets/fonts/PixelOperator.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperator";
+  src: url("../assets/fonts/PixelOperator-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ---------------------- */
+/*      PixelOperator8    */
+/* ---------------------- */
+@font-face {
+  font-family: "PixelOperator8";
+  src: url("../assets/fonts/PixelOperator8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperator8";
+  src: url("../assets/fonts/PixelOperator8-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ---------------------- */
+/*     PixelOperatorHB    */
+/* ---------------------- */
+@font-face {
+  font-family: "PixelOperatorHB";
+  src: url("../assets/fonts/PixelOperatorHB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperatorHB8";
+  src: url("../assets/fonts/PixelOperatorHB8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------------- */
+/*  PixelOperatorMono     */
+/* ---------------------- */
+@font-face {
+  font-family: "PixelOperatorMono";
+  src: url("../assets/fonts/PixelOperatorMono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperatorMono";
+  src: url("../assets/fonts/PixelOperatorMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Mono 8px */
+@font-face {
+  font-family: "PixelOperatorMono8";
+  src: url("../assets/fonts/PixelOperatorMono8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperatorMono8";
+  src: url("../assets/fonts/PixelOperatorMono8-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Mono HighBit */
+@font-face {
+  font-family: "PixelOperatorMonoHB";
+  src: url("../assets/fonts/PixelOperatorMonoHB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------------- */
+/*   PixelOperatorSC      */
+/* ---------------------- */
+@font-face {
+  font-family: "PixelOperatorSC";
+  src: url("../assets/fonts/PixelOperatorSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelOperatorSC";
+  src: url("../assets/fonts/PixelOperatorSC-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Links */
+a {
+  color: #fff;
+  font-family: "PixelOperator";
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: gray;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center; /* ✅ Vertically center logo + links */
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/img/header.png");
+  background-size: 64px;
+  background-repeat: repeat;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  image-rendering: pixelated;
+  box-sizing: border-box;
+}
+
+/* Logo container */
+.logo-header {
+  margin-right: 10px;
+  display: flex;
+  align-items: center; /* ✅ Center logo vertically */
+  height: 100%;
+}
+
+/* Logo image */
+.logo {
+  height: 39px;
+  width: 80px;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center; /* ✅ Center search bar vertically */
+  margin-left: 20px; /* ✅ Add space between logo and search bar */
+}
+
+.search-bar input {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/img/header.png");
+  background-size: 64px;
+  color: white;
+  border: 2px inset rgba(24, 20, 37, 1);
+  padding: 5px 10px;
+  border-right: none;
+  display: flex;
+  align-items: center; /* ✅ Center search bar vertically */
+  margin-left: 20px; /* ✅ Add space between logo and search bar */
+}
+
+input,
+select,
+textarea {
+  color: #ff0000;
+}
+
+textarea:focus,
+input:focus {
+  color: #ff0000;
+}
+
+.search-bar input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PixelOperatorSC";
+  font-weight: bold;
+}
+
+.search-bar input:focus {
+  border-color: lightsteelblue;
+  border-right: none;
+}
+
+.search-bar button {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/img/header.png");
+  background-size: 64px;
+  color: rgba(24, 20, 37, 1);
+  border: 2px inset rgba(24, 20, 37, 1);
+  border-left: none;
+  padding: 4px;
+  display: flex;
+  align-items: center; /* ✅ Center search bar vertically */
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; /* ✅ Center user menu vertically */
+  margin-left: auto; /* ✅ Push user menu to the right */
+}
+
+.user-menu a {
+  font-size: 24px;
+  border: 2px outset rgba(38, 43, 68, 1);
+  background-color: rgba(38, 43, 68, 1);
+  padding: 5px 5px;
+  display: flex; /* ✅ */
+  align-items: center; /* ✅ vertical alignment */
+  justify-content: center; /* optional: center horizontally */
+}
+
+.user-menu a:hover {
+  border: 2px outset lightblue;
+  background-color: lightblue;
+  color: black;
+}
+
+.user-menu a:active {
+  border: 2px inset lightblue;
+  background-color: lightblue;
+  color: black;
+}
+
+.user-menu .login {
+  background-color: rgba(24, 20, 37, 1);
+  border: 2px outset rgba(24, 20, 37, 1);
+}
+
+.user-menu .login:hover {
+  background-color: lightsteelblue;
+  border: 2px outset lightsteelblue;
+  color: black;
+}
+
+.user-menu .login:active {
+  background-color: lightsteelblue;
+  border: 2px inset lightsteelblue;
+  color: black;
+}
+
+.icon {
+  padding: 2px;
+  background-color: rgba(38, 43, 68, 1);
+  border-radius: 5px;
+  height: 32px;
+  width: 32px;
+}

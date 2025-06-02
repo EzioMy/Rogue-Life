@@ -1,0 +1,142 @@
+.carousel {
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 400px;
+  height: 400px;
+}
+
+.flickity-viewport{
+  overflow: visible;
+}
+
+.carousel-cell {
+  margin: 0 40px;
+  align-items: center;
+  height: 353px;
+  width: 616px;
+  justify-content: center;
+}
+
+.carousel-cell::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+  pointer-events: none; /* lets you click through the overlay */
+  z-index: 1;
+}
+
+.carousel-cell.is-selected img {
+  filter:blur(0)
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+  filter: blur(2px);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-cell img:hover {
+  filter:blur(0px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.carousel-cell .title {
+  position: absolute;
+  bottom: 0px;
+  left: 5%;
+  width: 50%;
+  color: white;
+  font-size: 24px;
+  text-align: left;
+  z-index: 2;
+}
+
+.carousel-cell .wish-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 2px outset darkgray;
+  background-color: gray;
+  background-image: url("/img/wish-unchecked.png");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, background-image 0.3s ease-in-out;
+}
+
+.carousel-cell .wish-icon:hover {
+  border: 2px outset lightsteelblue;
+  background-color: lightsteelblue;
+  background-image: url("/img/wish-checked.png");
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-cell .wish-icon:active {
+  border: 2px inset lightsteelblue;
+  background-color: lightsteelblue;
+  background-position: 1px 1px;
+  background-image: url("/img/wish-checked.png");
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-cell .price{
+  position: absolute;
+  font-family: "PixelOperatorMono";
+  bottom: 0px;
+  right: 5%;
+  width: 50%;
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  z-index: 2;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: gray;
+  transition: background 0.3s ease-in-out;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+.flickity-button {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Left arrow */
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+/* Right arrow */
+.flickity-prev-next-button.next {
+  right: 10px;
+}
