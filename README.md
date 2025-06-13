@@ -14,6 +14,8 @@ O design do site foi inspirado no estilo pixel art, utilizando a fonte **PixelOp
 
 Além disso, as imagens do projeto foram geradas com auxílio da inteligência artificial GPT, buscando agregar elementos visuais originais e modernos ao mockup.
 
+Link: [https://monumental-blini-5be5d8.netlify.app/](https://monumental-blini-5be5d8.netlify.app/)
+
 ## Autoria
 
 Desenvolvido por [**José Márcio de Albuquerque Emidio**](https://github.com/eziomy).  
