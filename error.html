@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Página Não Encontrada!</title>
+    <link rel="stylesheet" href="./css/error.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
 
-<body>
-    <link rel="stylesheet" href="./css/error.css">
-    <title>404 Not Found!</title>
-    <h1 class="error-title">404</h1>
-    <h2 class="error-subtitle">Página não encontrada!</h2>
-    <h3 class="error-message">Você caiu em uma armadilha e acabou morrendo!</h3>
-    <nav class="error-nav">
-        <a href="/index.html">Recomeçar!</a>
-    </nav>
-    <img src="./img/404.png" alt="404 Not Found" class="error-image">
-</body>
+    <div class="error-container">
+      <h1 class="error-title">404</h1>
+      <h2 class="page-not-found">PÁGINA NÃO ENCONTRADA</h2>
+      <h3 class="error-subtitle">Ops! Você se perdeu na masmorra!</h3>
+      <p class="error-message">
+        Parece que a página que você procura desapareceu nas brumas do tempo...
+        ou talvez você tenha pegado o mapa errado no início da aventura!
+      </p>
+
+      <div class="image-container">
+        <div class="friendly-frame"></div>
+        <img
+          src="./img/404.png"
+          alt="Aventureiro perdido na masmorra"
+          class="error-image"
+        />
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-label">LOCALIZAÇÃO</div>
+          <div class="stat-value">???</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">ORIENTAÇÃO</div>
+          <div class="stat-value">PERDIDO</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">ESPERANÇA</div>
+          <div class="stat-value">ALTA</div>
+        </div>
+      </div>
+
+      <p class="flavor-text adventure-quote">
+        "Todo grande aventureiro já se perdeu pelo menos uma vez. O importante é
+        encontrar o caminho de volta!"
+      </p>
+
+      <nav class="error-nav">
+        <a href="/index.html" class="restart-btn"
+          >🏠 VOLTAR AO INÍCIO DA AVENTURA 🗺️</a
+        >
+      </nav>
+
+      <p class="flavor-text">
+        Não se preocupe, explorador! Use o mapa acima para retornar ao ponto de
+        partida e continuar sua jornada.
+      </p>
+    </div>
+    <script src="./js/dropplets.js"></script>
+  </body>
 </html>

@@ -13,12 +13,98 @@
   </head>
   <body>
     <div id="header"></div>
-    <h1>Welcome to My Page</h1>
+    <div class="particles" id="particles"></div>
     <div id="content">
+      <h1>Ofertas</h1>
       <div class="carousel"></div>
+
+      <div class="explore">
+        <div class="filters">
+  <h2>Filtros</h2>
+
+  <label>
+    Gênero:
+    <select>
+      <option value="all">Todos</option>
+      <option value="roguelike">Roguelike</option>
+      <option value="roguelite">Roguelite</option>
+      <option value="rpg">RPG</option>
+      <option value="action">Ação</option>
+      <option value="horror">Terror</option>
+    </select>
+  </label>
+
+  <label>
+    Preço Máximo:
+    <input type="number" placeholder="Ex: 100" />
+  </label>
+
+  <label>
+    Em promoção:
+    <input type="checkbox" />
+  </label>
+
+  <label>
+    Modo de Jogo:
+    <select>
+      <option value="all">Todos</option>
+      <option value="singleplayer">Singleplayer</option>
+      <option value="multiplayer">Multiplayer</option>
+      <option value="coop">Coop Online</option>
+      <option value="localcoop">Coop Local</option>
+    </select>
+  </label>
+
+  <label>
+    Estilo de Arte:
+    <select>
+      <option value="all">Todos</option>
+      <option value="pixel">Pixel Art</option>
+      <option value="3d">3D</option>
+      <option value="2d">2D</option>
+      <option value="cartoon">Cartunesco</option>
+      <option value="dark">Sombrio</option>
+    </select>
+  </label>
+
+  <label>
+    Plataforma:
+    <select>
+      <option value="all">Todas</option>
+      <option value="windows">Windows</option>
+      <option value="mac">Mac</option>
+      <option value="linux">Linux</option>
+    </select>
+  </label>
+
+  <label>
+    Avaliação mínima:
+    <input type="number" min="0" max="10" step="0.1" placeholder="Ex: 8.5" />
+  </label>
+
+  <label>
+    Ano de Lançamento:
+    <input type="number" min="2000" max="2025" placeholder="Ex: 2023" />
+  </label>
+
+  <label>
+    Tempo Médio de Jogo:
+    <select>
+      <option value="all">Todos</option>
+      <option value="short">Menos de 10h</option>
+      <option value="medium">10h a 30h</option>
+      <option value="long">Mais de 30h</option>
+    </select>
+  </label>
+</div>
+        <!-- Games container -->
+        <div class="games" id="games-container"></div>
+      </div>
     </div>
+
+    <script type="module" src="./js/explore.js"></script>
     <script type="module" src="./js/carousel.js"></script>
+    <script src="./js/dropplets.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    
   </body>
 </html>

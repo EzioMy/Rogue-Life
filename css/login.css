@@ -1,0 +1,103 @@
+@import url("../css/header.css");
+
+body {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "PixelOperator";
+    font-weight: bold;
+    color: white;
+    background-color: #0C0615;
+    background-image: url("/img/login.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    background-color: rgba(23, 26, 46, 0.8);
+    border: 2px outset rgba(38, 43, 68, 1);
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+}
+
+#login-form h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#login-form a {
+    color: lightblue;
+    text-decoration: none;
+    font-family: "PixelOperator";
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#login-form a:hover {
+    color: rgb(0, 190, 253);
+    text-decoration: none;
+    font-family: "PixelOperator";
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#login-form p {
+    color: white;
+    text-decoration: none;
+    font-family: "PixelOperator";
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 2px solid rgba(38, 43, 68, 1);
+    background-color: rgba(38, 43, 68, 1);
+    border: 2px inset rgba(38, 43, 68, 1);
+    color: white;
+    font-family: "PixelOperator";
+    font-size: 18px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px outset rgba(38, 43, 68, 1);
+    background-color: rgba(38, 43, 68, 1);
+    color: white;
+    font-family: "PixelOperator";
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    border: 2px outset lightblue;
+    background-color: lightblue;
+    color: black;
+}
+
+#login-form button:active {
+    border: 2px inset lightblue;
+    background-color: lightblue;
+    color: black;
+}

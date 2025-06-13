@@ -1,30 +1,32 @@
 const games = [
   {
-    title: "Vampire Survivors",
-    price: "$6,49",
-    image: "/img/games/carousel1.jpg",
+    title: "Dungeon Reaper",
+    price: "R$6,49",
+    image: "/img/placeholder.png",
     oldPrice: "R$12,99",
     discount: "-50%",
   },
   {
-    title: "Risk Of Rain 2: \
-    Survivors of the Void",
-    price: "R$14,99",
-    image: "/img/games/carousel2.jpg",
+    title: "Echoes of Oblivion",
+    price: "R$17,99",
+    image: "/img/placeholder.png",
     oldPrice: "R$29,99",
-    discount: "-50%",
+    discount: "-40%",
   },
-  { title: "Balatro", 
-    price: "$19,99", 
-    image: "/img/games/carousel3.jpg",
+  {
+    title: "Cardborn Chaos",
+    price: "R$27,99",
+    image: "/img/placeholder.png",
     oldPrice: "R$39,99",
-    discount: "-50%",},
+    discount: "-30%",
+  },
 ];
+
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".carousel");
 
   // Load external template
-  fetch("/modules/card-huge.html")
+  fetch("/modules/card-huge-discount.html")
     .then((res) => {
       if (!res.ok) throw new Error("Failed to load template");
       return res.text();
