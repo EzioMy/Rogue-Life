@@ -16,6 +16,8 @@ Além disso, as imagens do projeto foram geradas com auxílio da inteligência a
 
 Link: [https://monumental-blini-5be5d8.netlify.app/](https://monumental-blini-5be5d8.netlify.app/)
 
+Não existe contas no site, para fazer login é só inserir qualquer coisa no login e senha.
+
 ## Autoria
 
 Desenvolvido por [**José Márcio de Albuquerque Emidio**](https://github.com/eziomy).  
